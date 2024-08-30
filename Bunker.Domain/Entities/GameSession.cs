@@ -2,6 +2,7 @@
 
 public class GameSession: BaseEntity<Guid>
 {
+    // TODO: как-будто недоделанный класс
     /// <summary>
     /// Идентификатор катастрофы из сценария
     /// </summary>
