@@ -4,6 +4,7 @@ using System.Reflection;
 
 namespace Bunker.Domain;
 
+// TODO: сгенерить миграцию
 public class ApplicationDbContext(DbContextOptions<ApplicationDbContext> options) : DbContext(options)
 {
     public DbSet<BunkerItem> BunkerItems { get; set; } = null!;
