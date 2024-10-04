@@ -2,6 +2,7 @@
 
 namespace Bunker.Domain.Entities;
 
+// TODO: В эту и другие сущности полезно добавить интерфейс IHasArchiveAttribute архивности (помтека на удаление) и интерфейс IHasTrackDateAttribute для историчности данных - когда добавили запись и когда удалили.
 public class BunkerItem: BaseEntity<Guid>
 {
     /// <summary>
