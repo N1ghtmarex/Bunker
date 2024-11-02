@@ -12,6 +12,7 @@ public class CardConfiguration : IEntityTypeConfiguration<Card>
         builder.HasKey(x => x.Id);
         builder.Property(x => x.Id).IsRequired();
 
+        // TODO: Можно накинуть индекс на уникальность, если хотим чтобы имена карт, наборов были уникальными
         builder.Property(x => x.Name).IsRequired();
         builder.Property(x => x.Description).IsRequired();
         builder.Property(x => x.Type).IsRequired();

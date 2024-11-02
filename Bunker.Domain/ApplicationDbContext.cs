@@ -4,6 +4,7 @@ using System.Reflection;
 
 namespace Bunker.Domain;
 
+// TODO: сгенерить миграцию
 public class ApplicationDbContext(DbContextOptions<ApplicationDbContext> options) : DbContext(options)
 {
     public DbSet<BunkerItem> BunkerItems { get; set; } = null!;
@@ -27,6 +28,8 @@ public class ApplicationDbContext(DbContextOptions<ApplicationDbContext> options
     public DbSet<SpecialCard> SpecialCards { get; set; } = null!;
     public DbSet<User> Users { get; set; } = null!;
 
+    // TODO: можно добавить методы для автоматического обновления полей трекинга даты
+    
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
         base.OnModelCreating(modelBuilder);
